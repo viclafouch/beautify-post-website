@@ -5,18 +5,32 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "tsc --noEmit && eslint . --ext .ts,.tsx"
   },
   "dependencies": {
+    "@emotion/react": "11.5.0",
+    "@emotion/styled": "11.3.0",
+    "@mui/icons-material": "5.1.0",
+    "@mui/material": "5.1.0",
+    "@types/aos": "3.0.4",
+    "aos": "2.3.4",
     "next": "12.0.3",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-simple-typewriter": "3.0.1"
   },
   "devDependencies": {
     "@types/node": "16.11.7",
     "@types/react": "17.0.34",
+    "@typescript-eslint/eslint-plugin": "5.3.1",
+    "@typescript-eslint/parser": "5.3.1",
     "eslint": "7.32.0",
-    "eslint-config-next": "12.0.3",
+    "eslint-config-airbnb": "19.0.0",
+    "eslint-config-airbnb-typescript": "15.0.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "prettier": "2.4.1",
     "typescript": "4.4.4"
   }
 }
