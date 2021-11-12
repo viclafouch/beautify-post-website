@@ -10,7 +10,6 @@ import {
   Toolbar,
   Typography
 } from '@mui/material'
-import GoogleChromeIcon from '@components/GoogleChrome/GoogleChrome'
 import HideOnScroll from '@components/HideOnScroll/HideOnScroll'
 import { EXTENSION_URL } from '@shared/constants/extension'
 
@@ -41,9 +40,9 @@ const Header = function (): React.ReactElement {
                       variant="h6"
                       component="span"
                       sx={{
+                        display: { xs: 'none', lg: 'block' },
                         paddingLeft: 1,
-                        lineHeight: 'normal',
-                        display: 'block'
+                        lineHeight: 'normal'
                       }}
                     >
                       Linkedin Formatter
@@ -55,7 +54,14 @@ const Header = function (): React.ReactElement {
                   href={EXTENSION_URL}
                   color="inherit"
                   variant="text"
-                  endIcon={<GoogleChromeIcon fontSize="medium" />}
+                  endIcon={
+                    <Image
+                      src="/images/chrome-logo.png"
+                      width="20"
+                      height="20"
+                      alt="Google Chrome"
+                    />
+                  }
                 >
                   Download on Chrome
                 </Button>

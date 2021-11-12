@@ -44,13 +44,14 @@ const Features = function (): React.ReactElement {
         >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit
         </Typography>
-        <Grid container columns={{ xs: 4, sm: 8, md: 12 }} mt={2} spacing={4}>
+        <Grid container mt={2} spacing={4}>
           {FEATURES.map((FEATURE, index) => {
             const IconComponent = FEATURE.icon
             return (
-              <Grid key={FEATURE.title} item xs={2} sm={4} md={4}>
+              <Grid key={FEATURE.title} item xs={12} sm={6} md={4}>
                 <Box
                   data-aos="fade-up"
+                  data-aos-once="true"
                   data-aos-delay={index * 100}
                   display="flex"
                   flexDirection="column"

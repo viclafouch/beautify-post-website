@@ -15,7 +15,7 @@ const HowItWorks = function (): React.ReactElement {
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
         nesciunt dolorum nam facere dolor aliqui
       </Typography>
-      <Container sx={{ mt: 5 }}>
+      <Container sx={{ mt: 5 }} disableGutters>
         <Box
           data-aos="zoom-in"
           data-aos-once="true"

@@ -1,6 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
 import { Box, Button, Container, Typography } from '@mui/material'
-import GoogleChromeIcon from '@components/GoogleChrome/GoogleChrome'
 import { EXTENSION_URL } from '@shared/constants/extension'
 
 const DownloadCallback = function (): React.ReactElement {
@@ -16,10 +16,19 @@ const DownloadCallback = function (): React.ReactElement {
         <Box display="flex" justifyContent="center" mt={4}>
           <Button
             color="primary"
-            variant="contained"
             component="a"
             href={EXTENSION_URL}
-            startIcon={<GoogleChromeIcon width={40} height={40} />}
+            variant="contained"
+            startIcon={
+              <Box sx={{ display: { xs: 'none', lg: 'block' } }}>
+                <Image
+                  src="/images/chrome-logo.png"
+                  width="20"
+                  height="20"
+                  alt="Google Chrome"
+                />
+              </Box>
+            }
             size="large"
           >
             <Typography component="span" variant="body2">
