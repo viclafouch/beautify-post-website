@@ -31,8 +31,6 @@ const HowItWorks = function (): React.ReactElement {
           style={{ display: 'block' }}
           width="100%"
           disablePictureInPicture
-          // @ts-ignore
-          controlslist="noremoteplayback"
           height="100%"
           src="/videos/how-it-works.mov"
         />

@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import {
   AppBar,
@@ -29,7 +28,7 @@ const Header = function (): React.ReactElement {
                     alignItems="center"
                     sx={{ cursor: 'pointer' }}
                   >
-                    <Image
+                    <img
                       src="/images/logo.png"
                       alt="Linkedin Formatter Logo"
                       width="32"
@@ -54,7 +53,7 @@ const Header = function (): React.ReactElement {
                   color="inherit"
                   variant="text"
                   endIcon={
-                    <Image
+                    <img
                       src="/images/chrome-logo.png"
                       width="20"
                       height="20"

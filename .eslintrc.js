@@ -5,7 +5,8 @@ module.exports = {
     'airbnb-typescript',
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'plugin:@next/next/recommended'
   ],
   plugins: ['@typescript-eslint', 'simple-import-sort'],
   parser: '@typescript-eslint/parser',
