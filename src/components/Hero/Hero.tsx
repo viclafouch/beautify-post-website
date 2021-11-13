@@ -1,19 +1,10 @@
 import React from 'react'
-import { Cursor, useTypewriter } from 'react-simple-typewriter'
-import Image from 'next/image'
-import { Box, Button, Container, Grid, Theme, Typography } from '@mui/material'
-import useMediaQuery from '@mui/material/useMediaQuery'
-import Rocket from '@components/Rocket/Rocket'
-import { EXTENSION_URL } from '@shared/constants/extension'
+import { Box, Container, Grid, Rating, Typography } from '@mui/material'
+import TitleWriter from './TitleWriter/TitleWriter'
+import DownloadButton from '@components/DownloadButton/DownloadButton'
+import Rocket from '@components/Icons/Rocket/Rocket'
 
 const Hero = function (): React.ReactElement {
-  const isUpLg = useMediaQuery((theme: Theme) => theme.breakpoints.up('lg'))
-
-  const { text } = useTypewriter({
-    words: ['bold', 'italic'],
-    loop: isUpLg ? false : 1
-  })
-
   return (
     <Box sx={{ backgroundColor: 'secondary.main' }} pt={10} pb={5}>
       <Container maxWidth="lg">
@@ -36,22 +27,7 @@ const Hero = function (): React.ReactElement {
             }}
           >
             <Box mb={2}>
-              <Typography variant="h2" component="h1">
-                Format your text in <br />
-                <Typography
-                  component="span"
-                  variant="inherit"
-                  sx={{
-                    fontStyle:
-                      text.startsWith('i') && isUpLg ? 'italic' : 'normal',
-                    fontWeight: text.startsWith('b') && isUpLg ? '900' : '700'
-                  }}
-                >
-                  {text}
-                </Typography>
-                {isUpLg ? <Cursor /> : ' '}
-                on LinkedIn
-              </Typography>
+              <TitleWriter />
             </Box>
             <Box mb={5}>
               <Typography variant="body1" sx={{ maxWidth: 650 }}>
@@ -61,28 +37,22 @@ const Hero = function (): React.ReactElement {
                 sunt esse quibusdam!
               </Typography>
             </Box>
-            <Box display="flex" flexDirection="column" alignItems="flex-start">
-              <Button
-                color="primary"
-                component="a"
-                href={EXTENSION_URL}
-                variant="contained"
-                startIcon={
-                  <Box sx={{ display: { xs: 'none', lg: 'block' } }}>
-                    <Image
-                      src="/images/chrome-logo.png"
-                      width="20"
-                      height="20"
-                      alt="Google Chrome"
-                    />
-                  </Box>
-                }
-                size="large"
-              >
-                <Typography component="span" variant="body2">
-                  Download on the Chrome Web Store
-                </Typography>
-              </Button>
+            <Box
+              display="flex"
+              flexDirection="column"
+              gap={2}
+              alignItems="flex-start"
+            >
+              <DownloadButton />
+              <Box display="flex" gap={1} alignItems="center">
+                <Rating
+                  name="linkeding-rating"
+                  defaultValue={4.5}
+                  readOnly
+                  precision={0.5}
+                />
+                <Typography variant="subtitle2">+100k users</Typography>
+              </Box>
             </Box>
           </Grid>
           <Grid

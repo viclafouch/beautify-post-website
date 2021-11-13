@@ -11,7 +11,6 @@ import {
   Typography
 } from '@mui/material'
 import HideOnScroll from '@components/HideOnScroll/HideOnScroll'
-import { EXTENSION_URL } from '@shared/constants/extension'
 
 const Header = function (): React.ReactElement {
   return (
@@ -51,7 +50,7 @@ const Header = function (): React.ReactElement {
                 </Link>
                 <Button
                   component="a"
-                  href={EXTENSION_URL}
+                  href="/download"
                   color="inherit"
                   variant="text"
                   endIcon={
