@@ -3,10 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "preexport": "npm run build",
-    "export": "next export",
-    "prestart": "npm run export",
+    "build": "next build && next export",
+    "prestart": "npm run build",
     "start": "serve out",
     "lint": "tsc --noEmit && eslint . --ext .ts,.tsx"
   },
