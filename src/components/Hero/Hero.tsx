@@ -50,7 +50,9 @@ const Hero = function (): React.ReactElement {
                   readOnly
                   precision={0.5}
                 />
-                <Typography variant="subtitle2">+100k users</Typography>
+                <Typography variant="subtitle2" component="span">
+                  +100k users
+                </Typography>
               </Box>
             </Box>
           </Grid>

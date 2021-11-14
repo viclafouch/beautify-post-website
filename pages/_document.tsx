@@ -18,7 +18,7 @@ class MyDocument extends Document {
 
   render(): React.ReactElement {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta name="theme-color" content="#ffffff" />
           <meta charSet="utf-8" />
@@ -42,7 +42,7 @@ class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="https://www.linkedin-formatter.io/linkedin-formatter.jpg"
+            content="https://www.linkedin-formatter.app/linkedin-formatter.jpg"
           />
           <meta
             name="keywords"
@@ -61,11 +61,14 @@ class MyDocument extends Document {
             property="og:description"
             content="Web extension that allows to bold and italicize text on the LinkedIn website"
           />
-          <meta property="og:url" content="https://www.linkedin-formatter.io" />
+          <meta
+            property="og:url"
+            content="https://www.linkedin-formatter.app"
+          />
           <meta property="og:site_name" content="Linkedin Formatter" />
           <meta
             property="og:image"
-            content="https://www.linkedin-formatter.io/linkedin-formatter.png"
+            content="https://www.linkedin-formatter.app/linkedin-formatter.png"
           />
         </Head>
         <body>

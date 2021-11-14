@@ -41,8 +41,9 @@ const Features = function (): React.ReactElement {
         </Typography>
         <Typography
           variant="subtitle1"
+          component="span"
           align="center"
-          sx={{ maxWidth: 680, margin: 'auto' }}
+          sx={{ maxWidth: 680, margin: 'auto', display: 'block' }}
         >
           3 main take aways.
         </Typography>

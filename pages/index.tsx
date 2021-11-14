@@ -13,6 +13,14 @@ const Home: NextPage = function () {
     <>
       <Head>
         <title>Linkedin Formatter | Format your text in Bold and Italic</title>
+        <meta
+          name="description"
+          content="Install a web extension to format your phrases and keywords in bold and italic on LinkedIn. Available to everyone for free."
+        />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <Box>

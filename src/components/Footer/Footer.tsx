@@ -13,6 +13,7 @@ const Footer = function (): React.ReactElement {
           <Link
             target="_blank"
             underline="hover"
+            rel="noreferrer noopener"
             href="https://www.linkedin.com/in/victordelafouchardiere/"
           >
             Victor de la Fouchardiere
