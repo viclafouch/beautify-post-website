@@ -1,6 +1,6 @@
 import React from 'react'
 import CreateIcon from '@mui/icons-material/Create'
-import FolderIcon from '@mui/icons-material/Folder'
+import FingerprintIcon from '@mui/icons-material/Fingerprint'
 import VisibilityIcon from '@mui/icons-material/Visibility'
 import { Avatar, Box, Container, Grid, Typography } from '@mui/material'
 import { alpha } from '@mui/material/styles'
@@ -21,14 +21,14 @@ const FEATURES: Feature[] = [
   {
     title: 'New creativity',
     description:
-      'By default, making words in bold and italic is not possible on LinkedIn, using LinkedIn Formatter will give a different identity to your posts.',
+      'By default, making words in bold and italic is not possible on LinkedIn, using LinkedIn Formatter will make you more creative.',
     icon: CreateIcon
   },
   {
-    title: 'Hello world 3',
+    title: 'Different identity',
     description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae atque delectus, necessitatibus voluptas laborum',
-    icon: FolderIcon
+      "Be authentic in your posts by giving a new style to your phrases and keywords. Start with authenticity and you can't go wrong.",
+    icon: FingerprintIcon
   }
 ]
 
@@ -40,11 +40,11 @@ const Features = function (): React.ReactElement {
           Format your text on Linkedin
         </Typography>
         <Typography
-          variant="body1"
+          variant="subtitle1"
           align="center"
           sx={{ maxWidth: 680, margin: 'auto' }}
         >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit
+          3 main take aways.
         </Typography>
         <Grid container mt={2} spacing={4}>
           {FEATURES.map((FEATURE, index) => {

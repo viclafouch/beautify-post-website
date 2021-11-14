@@ -29,9 +29,9 @@ const HowItWorks = function (): React.ReactElement {
         align="center"
         sx={{ maxWidth: 600, marginInline: 'auto' }}
       >
-        1. Install the extension. <br />
-        2. Select a text inside the creation post modal to display the tooltip
-        to bold and italic your current text.
+        <b>1.</b> Install the extension. <br />
+        <b>2.</b> Select a text inside the creation post modal to display the
+        tooltip to bold and italic your current text.
       </Typography>
       <Box
         data-aos="zoom-in"
@@ -41,7 +41,9 @@ const HowItWorks = function (): React.ReactElement {
           boxShadow: (theme): string => theme.shadows[6],
           maxWidth: 720,
           marginInline: 'auto',
-          mt: 5
+          mt: 5,
+          borderRadius: 1,
+          overflow: 'hidden'
         }}
       >
         <Video
