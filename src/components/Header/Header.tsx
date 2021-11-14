@@ -30,7 +30,7 @@ const Header = function (): React.ReactElement {
                   >
                     <img
                       src="/images/logo.png"
-                      alt="Linkedin Formatter Logo"
+                      alt="LinkedIn Formatter Logo"
                       width="32"
                       height="32"
                     />
@@ -38,12 +38,12 @@ const Header = function (): React.ReactElement {
                       variant="h6"
                       component="span"
                       sx={{
-                        display: { xs: 'none', lg: 'block' },
+                        display: { xs: 'none', sm: 'block' },
                         paddingLeft: 1,
                         lineHeight: 'normal'
                       }}
                     >
-                      Linkedin Formatter
+                      LinkedIn Formatter
                     </Typography>
                   </MuiLink>
                 </Link>
@@ -61,7 +61,7 @@ const Header = function (): React.ReactElement {
                     />
                   }
                 >
-                  Download on Chrome
+                  Download the extension
                 </Button>
               </Box>
             </Toolbar>

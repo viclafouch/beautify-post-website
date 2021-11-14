@@ -1,7 +1,24 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer'
 import { Box, Container, Typography } from '@mui/material'
+import { styled } from '@mui/system'
+
+const Video = styled('video')({
+  display: 'block'
+})
 
 const HowItWorks = function (): React.ReactElement {
+  const videoRef = React.useRef<HTMLVideoElement>(null)
+  const { ref, inView } = useInView({
+    threshold: 0
+  })
+
+  React.useEffect(() => {
+    if (inView && videoRef.current) {
+      videoRef.current.play()
+    }
+  }, [inView, videoRef])
+
   return (
     <Container sx={{ pt: 5, pb: 5 }}>
       <Typography variant="h4" align="center" gutterBottom>
@@ -12,11 +29,13 @@ const HowItWorks = function (): React.ReactElement {
         align="center"
         sx={{ maxWidth: 600, marginInline: 'auto' }}
       >
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-        nesciunt dolorum nam facere dolor aliqui
+        1. Install the extension. <br />
+        2. Select a text inside the creation post modal to display the tooltip
+        to bold and italic your current text.
       </Typography>
       <Box
         data-aos="zoom-in"
+        ref={ref}
         data-aos-once="true"
         sx={{
           boxShadow: (theme): string => theme.shadows[6],
@@ -25,15 +44,18 @@ const HowItWorks = function (): React.ReactElement {
           mt: 5
         }}
       >
-        <video
+        <Video
           controls
           muted
-          style={{ display: 'block' }}
+          ref={videoRef}
+          preload="metadata"
+          playsInline
           width="100%"
-          disablePictureInPicture
           height="100%"
-          src="/videos/how-it-works.mov"
-        />
+          disablePictureInPicture
+        >
+          <source src="/videos/how-it-works.mp4" type="video/mp4" />
+        </Video>
       </Box>
     </Container>
   )

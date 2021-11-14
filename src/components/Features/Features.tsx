@@ -1,5 +1,7 @@
 import React from 'react'
+import CreateIcon from '@mui/icons-material/Create'
 import FolderIcon from '@mui/icons-material/Folder'
+import VisibilityIcon from '@mui/icons-material/Visibility'
 import { Avatar, Box, Container, Grid, Typography } from '@mui/material'
 import { alpha } from '@mui/material/styles'
 
@@ -11,16 +13,16 @@ type Feature = {
 
 const FEATURES: Feature[] = [
   {
-    title: 'Hello world 1',
+    title: 'Better readability',
     description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae atque delectus, necessitatibus voluptas laborum',
-    icon: FolderIcon
+      'By styling the most relevant phrases and keywords, you are helping the user to understand your content faster.',
+    icon: VisibilityIcon
   },
   {
-    title: 'Hello world 2',
+    title: 'New creativity',
     description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae atque delectus, necessitatibus voluptas laborum',
-    icon: FolderIcon
+      'By default, making words in bold and italic is not possible on LinkedIn, using LinkedIn Formatter will give a different identity to your posts.',
+    icon: CreateIcon
   },
   {
     title: 'Hello world 3',

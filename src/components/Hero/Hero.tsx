@@ -31,10 +31,9 @@ const Hero = function (): React.ReactElement {
             </Box>
             <Box mb={5}>
               <Typography variant="body1" sx={{ maxWidth: 650 }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                molestiae accusantium, sit distinctio non voluptatem asperiores
-                eos nam adipisci ea qui? Ipsa earum quis ea excepturi similique
-                sunt esse quibusdam!
+                Boost your visual creativity by making your text more beautiful
+                on your LinkedIn posts. You will add value for each posts you
+                create with this extension.
               </Typography>
             </Box>
             <Box
