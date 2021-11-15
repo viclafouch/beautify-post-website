@@ -71,11 +71,14 @@ const Hero = function (): React.ReactElement {
                   mt={2}
                   width="100%"
                   alignItems="center"
-                  justifyContent="center"
                   sx={{
                     flexDirection: {
                       xs: 'column',
                       md: 'row'
+                    },
+                    justifyContent: {
+                      xs: 'center',
+                      lg: 'flex-start'
                     }
                   }}
                 >
