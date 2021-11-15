@@ -36,20 +36,17 @@ const Hero = function (): React.ReactElement {
                 create with this extension.
               </Typography>
             </Box>
-            <Box
-              display="flex"
-              flexDirection="column"
-              gap={2}
-              alignItems="flex-start"
-            >
+            <Box display="flex" flexDirection="column" alignItems="flex-start">
               <DownloadButton />
-              <Box display="flex" gap={1} alignItems="center">
-                <Rating
-                  name="linkeding-rating"
-                  defaultValue={4.5}
-                  readOnly
-                  precision={0.5}
-                />
+              <Box display="flex" mt={2} alignItems="center">
+                <Box mr={1} display="flex">
+                  <Rating
+                    name="linkeding-rating"
+                    defaultValue={4.5}
+                    readOnly
+                    precision={0.5}
+                  />
+                </Box>
                 <Typography variant="subtitle2" component="span">
                   +100k users
                 </Typography>

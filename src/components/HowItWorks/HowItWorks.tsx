@@ -27,7 +27,7 @@ const HowItWorks = function (): React.ReactElement {
       <Typography
         variant="body1"
         align="center"
-        sx={{ maxWidth: 600, marginInline: 'auto' }}
+        sx={{ maxWidth: 600, margin: 'auto' }}
       >
         <b>1.</b> Install the extension. <br />
         <b>2.</b> Select a text inside the creation post modal to display the
@@ -40,7 +40,7 @@ const HowItWorks = function (): React.ReactElement {
         sx={{
           boxShadow: (theme): string => theme.shadows[6],
           maxWidth: 720,
-          marginInline: 'auto',
+          margin: 'auto',
           mt: 5,
           borderRadius: 1,
           overflow: 'hidden'
