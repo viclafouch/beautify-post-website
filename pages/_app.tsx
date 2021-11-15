@@ -29,7 +29,7 @@ const App = function ({ Component, pageProps }: AppProps): React.ReactElement {
       />
       <Script
         id="gtag-init"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
