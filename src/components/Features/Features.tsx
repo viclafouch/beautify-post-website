@@ -36,8 +36,8 @@ const Features = function (): React.ReactElement {
   return (
     <Container>
       <Box mt={10} mb={10}>
-        <Typography variant="h4" align="center" gutterBottom>
-          Format your text on Linkedin
+        <Typography variant="h4" component="h2" align="center" gutterBottom>
+          A new way to publish on LinkedIn
         </Typography>
         <Typography
           variant="subtitle1"
@@ -72,7 +72,12 @@ const Features = function (): React.ReactElement {
                   >
                     <IconComponent color="primary" />
                   </Avatar>
-                  <Typography variant="h6" gutterBottom align="center">
+                  <Typography
+                    variant="h6"
+                    component="h3"
+                    gutterBottom
+                    align="center"
+                  >
                     {FEATURE.title}
                   </Typography>
                   <Typography variant="body1" align="center">

@@ -12,7 +12,7 @@ const Home: NextPage = function () {
   return (
     <>
       <Head>
-        <title>Linkedin Formatter | Format your text in Bold and Italic</title>
+        <title>LinkedIn Formatter | Format your text in Bold and Italic</title>
         <meta
           name="description"
           content="Install a web extension to format your phrases and keywords in bold and italic on LinkedIn. Available to everyone for free."
@@ -27,8 +27,12 @@ const Home: NextPage = function () {
         <Header />
         <Toolbar />
         <Hero />
-        <Features />
-        <HowItWorks />
+        <section id="a-new-way">
+          <Features />
+        </section>
+        <section id="how-it-works">
+          <HowItWorks />
+        </section>
         <DownloadCallback />
         <Footer />
       </Box>
