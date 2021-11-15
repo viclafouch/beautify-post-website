@@ -28,6 +28,10 @@ class MyDocument extends Document {
           <link sizes="114x114" href="/favicon-114x114.png" />
           <link rel="icon" href="/favicon.png" type="image/png" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <meta
+            name="google-site-verification"
+            content="kycxyLeKhLwQtnSNzjs-C7b8t4jAe0IDK3OhhA9mXk0"
+          />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="twitter:card" content="summary" />
