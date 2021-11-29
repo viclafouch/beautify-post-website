@@ -5,9 +5,7 @@ type DownloadButtonProps = ButtonProps<'a'> & {
   label?: string
 }
 
-const DownloadButton = function (
-  props: DownloadButtonProps
-): React.ReactElement {
+const DownloadButton = (props: DownloadButtonProps): React.ReactElement => {
   const { label, ...rest } = props
   return (
     <Button

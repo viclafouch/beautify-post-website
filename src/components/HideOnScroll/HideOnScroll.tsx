@@ -5,7 +5,7 @@ type HideOnScrollProps = {
   children: JSX.Element
 }
 
-const HideOnScroll = function (props: HideOnScrollProps): React.ReactElement {
+const HideOnScroll = (props: HideOnScrollProps): React.ReactElement => {
   const { children } = props
   const trigger = useScrollTrigger()
 

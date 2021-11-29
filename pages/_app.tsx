@@ -3,13 +3,14 @@ import type { AppProps } from 'next/app'
 import Script from 'next/script'
 import { ThemeProvider } from '@mui/material'
 import CssBaseline from '@mui/material/CssBaseline'
-import 'aos/dist/aos.css'
 import theme from '@theme/index'
 import Aos from 'aos'
 
+import 'aos/dist/aos.css'
+
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID
 
-const App = function ({ Component, pageProps }: AppProps): React.ReactElement {
+const App = ({ Component, pageProps }: AppProps): React.ReactElement => {
   React.useEffect(() => {
     Aos.init({
       disable: 'mobile'

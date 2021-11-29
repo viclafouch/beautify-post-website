@@ -12,7 +12,7 @@ import {
 import HideOnScroll from '@components/HideOnScroll/HideOnScroll'
 import useScrollPosition from '@react-hook/window-scroll'
 
-const Header = function (): React.ReactElement {
+const Header = (): React.ReactElement => {
   const scrollY = useScrollPosition()
 
   return (

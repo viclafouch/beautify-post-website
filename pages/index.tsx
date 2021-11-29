@@ -8,7 +8,7 @@ import Header from '@components/Header/Header'
 import Hero from '@components/Hero/Hero'
 import HowItWorks from '@components/HowItWorks/HowItWorks'
 
-const Home: NextPage = function () {
+const Home: NextPage = () => {
   return (
     <>
       <Head>

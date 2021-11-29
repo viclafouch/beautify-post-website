@@ -32,7 +32,7 @@ const FEATURES: Feature[] = [
   }
 ]
 
-const Features = function (): React.ReactElement {
+const Features = (): React.ReactElement => {
   return (
     <Container>
       <Box mt={10} mb={10}>

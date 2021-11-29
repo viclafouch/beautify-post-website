@@ -3,7 +3,7 @@ import { Box, Container, Link, Typography } from '@mui/material'
 
 const currentYear = new Date().getFullYear()
 
-const Footer = function (): React.ReactElement {
+const Footer = (): React.ReactElement => {
   return (
     <Box pt={5} pb={5} textAlign="center">
       <Container>

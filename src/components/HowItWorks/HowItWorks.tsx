@@ -7,7 +7,7 @@ const Video = styled('video')({
   display: 'block'
 })
 
-const HowItWorks = function (): React.ReactElement {
+const HowItWorks = (): React.ReactElement => {
   const videoRef = React.useRef<HTMLVideoElement>(null)
   const { ref, inView } = useInView({
     threshold: 0
@@ -38,7 +38,9 @@ const HowItWorks = function (): React.ReactElement {
         ref={ref}
         data-aos-once="true"
         sx={{
-          boxShadow: (theme): string => theme.shadows[6],
+          boxShadow: (theme): string => {
+            return theme.shadows[6]
+          },
           maxWidth: 720,
           margin: 'auto',
           mt: 5,

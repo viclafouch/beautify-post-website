@@ -2,8 +2,10 @@ import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import { Theme, Typography, useMediaQuery } from '@mui/material'
 
-const TitleWriter = function (): React.ReactElement {
-  const isUpLg = useMediaQuery((theme: Theme) => theme.breakpoints.up('lg'))
+const TitleWriter = (): React.ReactElement => {
+  const isUpLg = useMediaQuery((theme: Theme) => {
+    return theme.breakpoints.up('lg')
+  })
 
   const { text } = useTypewriter({
     words: ['bold', 'italic'],

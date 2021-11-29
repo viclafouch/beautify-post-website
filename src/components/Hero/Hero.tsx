@@ -1,10 +1,11 @@
 import React from 'react'
 import { Box, Container, Grid, Rating, Typography } from '@mui/material'
-import TitleWriter from './TitleWriter/TitleWriter'
 import DownloadButton from '@components/DownloadButton/DownloadButton'
 import Rocket from '@components/Icons/Rocket/Rocket'
 
-const Hero = function (): React.ReactElement {
+import TitleWriter from './TitleWriter/TitleWriter'
+
+const Hero = (): React.ReactElement => {
   return (
     <Box
       pt={20}

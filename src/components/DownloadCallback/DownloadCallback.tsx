@@ -1,8 +1,9 @@
 import React from 'react'
 import { Box, Container, Typography } from '@mui/material'
+
 import DownloadButton from '../DownloadButton/DownloadButton'
 
-const DownloadCallback = function (): React.ReactElement {
+const DownloadCallback = (): React.ReactElement => {
   return (
     <Box
       sx={{
