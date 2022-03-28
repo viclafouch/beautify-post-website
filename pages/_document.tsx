@@ -38,7 +38,7 @@ class MyDocument extends Document {
           <meta name="twitter:creator" content="@TrustedSheriff" />
           <meta
             name="twitter:title"
-            content="Linkedin Formatter | Format your text in Bold and Italic"
+            content="Beautify Post | Format your text in Bold and Italic"
           />
           <meta
             name="twitter:description"
@@ -46,7 +46,7 @@ class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="https://www.linkedin-formatter.app/linkedin-formatter.jpg"
+            content="https://www.beautify-post.app/beautify-post.jpg"
           />
           <meta
             name="keywords"
@@ -59,20 +59,17 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta
             property="og:title"
-            content="Linkedin Formatter | Format your text in Bold and Italic"
+            content="Beautify post | Format your text in Bold and Italic"
           />
           <meta
             property="og:description"
             content="Web extension that allows to bold and italicize text on the LinkedIn website"
           />
-          <meta
-            property="og:url"
-            content="https://www.linkedin-formatter.app"
-          />
-          <meta property="og:site_name" content="Linkedin Formatter" />
+          <meta property="og:url" content="https://www.beautify-post.app" />
+          <meta property="og:site_name" content="Beautify post" />
           <meta
             property="og:image"
-            content="https://www.linkedin-formatter.app/linkedin-formatter.png"
+            content="https://www.beautify-post.app/beautify-post.png"
           />
         </Head>
         <body>

@@ -39,7 +39,7 @@ const Header = (): React.ReactElement => {
                     >
                       <img
                         src="/images/logo.png"
-                        alt="LinkedIn Formatter Logo"
+                        alt="Beautify Post Logo"
                         width="32"
                         height="32"
                       />
@@ -52,7 +52,7 @@ const Header = (): React.ReactElement => {
                           lineHeight: 'normal'
                         }}
                       >
-                        LinkedIn Formatter
+                        Beautify Post
                       </Typography>
                     </MuiLink>
                   </Link>

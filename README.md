@@ -1,8 +1,8 @@
-# Linkedin Formatter Website ![Vercel](https://vercelbadge.vercel.app/api/viclafouch/linkedin-formatter-website)
+# Beautify Post Website ![Vercel](https://vercelbadge.vercel.app/api/viclafouch/linkedin-formatter-website)
 
-Landing page to promote the [Linkedin Formatter](https://github.com/viclafouch/linkedin-formatter) extension.
+Landing page to promote the [Beautify Post](https://github.com/viclafouch/beautify-post) extension.
 
-![Linkedin Formatter](https://github.com/viclafouch/linkedin-formatter-website/blob/master/public/linkedin-formatter.png)
+![Beautify Post](https://github.com/viclafouch/beautify-post-website/blob/master/public/beautify-post.png)
 
 ## How to run (locally)
 
@@ -13,7 +13,7 @@ Install dependencies
 Launch dev server
 
     $ npm run dev
-    
+
 
 ## Contributing
 

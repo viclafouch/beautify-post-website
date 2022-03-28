@@ -21,7 +21,7 @@ const FEATURES: Feature[] = [
   {
     title: 'New creativity',
     description:
-      'By default, making words in bold and italic is not possible on LinkedIn, using LinkedIn Formatter will make you more creative.',
+      'By default, making words in bold and italic is not possible on LinkedIn, using Beautify Post will make you more creative.',
     icon: CreateIcon
   },
   {

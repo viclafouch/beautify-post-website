@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>LinkedIn Formatter | Format your text in Bold and Italic</title>
+        <title>Beautify Post | Format your text in Bold and Italic</title>
         <meta
           name="description"
           content="Install a web extension to format your phrases and keywords in bold and italic on LinkedIn. Available to everyone for free."
