@@ -6,7 +6,7 @@ module.exports = {
       {
         source: '/download',
         destination:
-          'https://chrome.google.com/webstore/detail/linkedin-formatter/kdanpggknenhnbpajgeckelhgkghlmjp'
+          'https://chrome.google.com/webstore/detail/beautify-post/ogngclmkdkdmdekchmghneecloclcffg'
       }
     ]
   }
