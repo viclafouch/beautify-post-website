@@ -8,7 +8,7 @@ import Aos from 'aos'
 
 import 'aos/dist/aos.css'
 
-const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID as string
 
 const App = ({ Component, pageProps }: AppProps): React.ReactElement => {
   React.useEffect(() => {

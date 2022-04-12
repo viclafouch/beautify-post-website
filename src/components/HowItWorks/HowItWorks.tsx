@@ -15,7 +15,7 @@ const HowItWorks = (): React.ReactElement => {
 
   React.useEffect(() => {
     if (inView && videoRef.current) {
-      videoRef.current.play()
+      videoRef.current.play().catch(() => {})
     }
   }, [inView, videoRef])
 
